@@ -1,0 +1,187 @@
+/* body{
+     background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-repeat: no-repeat;
+     background-position: center center;
+     background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+} */
+/*Fix for responsive background image in mobile devices */
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#welcome{
+  margin:0;
+  padding:0;
+}
+#navigation{
+  margin:0;
+  border-radius: 0 0 0 0;
+}
+
+#trademark {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+#jumbo{
+  border-radius: 0 0 8px 8px;
+   background-image: url("https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  opacity: 0.9;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#aboutjumbo{
+  margin: 5% 10% 5% 10%;
+  padding: 5px;
+  border-radius: 4px;
+}
+#aboutheader{
+  color: black;
+}
+#aboutsubject{
+  color:black;
+}
+#pratimage{
+  height:220px;
+  width: 220px;
+  border-radius: 110px;
+}
+#myname{
+  color:#FF6347;
+}
+#college{
+  color: grey;
+  font-size: small;
+}
+#aboutsubject1{
+  font-size: medium;
+  color: black;
+}
+#note{
+  font-size: small;
+  color: black;
+}
+#gmail{
+  color: #B22222;
+}
+#facebook{
+  font-size: 40px;
+  margin:3px;
+}
+#github{
+  font-size: 40px;
+  margin:3px;
+  color: black;
+}
+#linkedin{
+  font-size: 40px;
+  margin:3px;
+}
+#instagram{
+  font-size: 40px;
+  margin:3px;
+  color: black;
+}
+
+.jumbotron .container{
+  text-align: center;
+  color:white;
+  font-weight: bolder;
+}
+
+@font-face{
+  font-family: 'samarn';
+  src: url(font/samarn.woff);
+  font-style: normal;
+  font-weight: 100;
+}
+
+.navbar-brand{
+  font-family: 'samarn';
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+#branding{
+  color:#FF6347;
+}
+.glyphicon-tent{
+  color:#FF6347;
+}
+.navbar-inverse{
+  background-color: black;
+  border-bottom-color: black;
+  border-bottom-width: medium;
+}
+
+#showcampsite{
+  margin-top: 30px;
+}
+#showpagethumbnail{
+  padding: 0;
+}
+
+#showimage{
+  border-radius: 4px;
+  width:100%;
+  height: auto;
+}
+#authorname{
+  color:#FF6347; 
+}
+
+.headingfornew{
+  color:black;
+  text-align: center;
+  font-family: Georgia sans-serif;
+}
+#newform{
+  width: 320px;
+  margin:25px auto;
+}
+#deletebutton{
+  display: inline;
+}
+#alertbox{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%
+}
+#alertcontainer{
+  margin: 0;
+  padding: 0;
+  width:100%;
+}
+/* Google Maps */
+#map {
+    height: 400px;
+    width: 100%;
+}
