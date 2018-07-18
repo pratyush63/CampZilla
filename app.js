@@ -17,8 +17,9 @@ var indexRoutes   =require("./routes/index"),
 campsiteRoutes    =require("./routes/campsites"),
 commentRoutes     =require("./routes/comments");
 //------------------------------------------------------------------------------ 
- 
-mongoose.connect("mongodb://localhost/camp_zilla");
+
+var url=process.env.DATABASEURL||"mongodb://localhost/camp_zilla";
+mongoose.connect(url);
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.set("view engine","ejs");
